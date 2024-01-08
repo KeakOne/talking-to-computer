@@ -1,22 +1,20 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>talk 2 me</title>
-  <meta name="description" content="talking to a computer. wow" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:title" content="a dumb site"/>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <link rel="stylesheet" href="css/main.css" />
-</head>
-<body>
-  <div class="background">
-
+  <head>
+    <title>talk 2 me</title>
+    <meta name="description" content="talking to a computer. wow" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="a dumb site" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="background">
       <section id="section_hello">
         <p><em>Go ahead, try it&hellip;</em></p>
         <p class="voice_instructions">Say "hello" human.</p>
         <p id="hello" class="hidden">
-          hello computer operator, im listening to you.
-          Why dont you try these out:
+          hello, im listening to you. Why dont you try these out:
         </p>
       </section>
 
@@ -37,18 +35,19 @@
 
       <div id="unsupported" class="hidden">
         <h4>It looks like your browser doesn't support speech recognition.</h4>
-        <p>speech recognition isnt playing nice with your browser, chrome works well!</p>
+        <p>
+          speech recognition isnt playing nice with your browser, chrome works
+          well!
+        </p>
       </div>
+    </div>
 
-  </div>
+    <script src="./vendor/js/highlight.pack.js"></script>
+    <script>
+      hljs.initHighlightingOnLoad()
+    </script>
 
-
-  <script src="./vendor/js/highlight.pack.js"></script>
-  <script>
-    hljs.initHighlightingOnLoad();
-  </script>
-
-  <script src="./annyang.js"></script>
-  <script src="./script.js"></script>
-</body>
+    <script src="./annyang.js"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>
